@@ -1,0 +1,17 @@
+body {
+    background-color: #FFC7BA;
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+  }
+  div,table,th,td{
+    padding:16px;
+  }
+ button{
+   margin: 16px;
+ }
+ #error{
+   visibility: hidden;
+   color:red;
+   padding-left: 16px;;
+ }
+ 
