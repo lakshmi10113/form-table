@@ -2,11 +2,16 @@ let tableData = [];
 
 function inputFields(){
 
-    const first_name = document.getElementById("first_name").value;
-    const last_name = document.getElementById("last_name").value;
+    const first_name = document.getElementById("first-name").value;
+    const last_name = document.getElementById("last-name").value;
     const address = document.getElementById("address").value;
-    const pin_code = document.getElementById("pin_code").value;
-    const gender = document.getElementById("gender").value;
+    const pin_code = document.getElementById("pincode").value;
+    if(document.getElementById("male").checked){
+        var gender = document.getElementById("male").value;
+    }
+    else{
+        var gender = document.getElementById("female").value;
+    }
     let food =["pizza","burger","pasta","noodles","rice"];
     let food_result =[];
     food.forEach((f) => {
@@ -16,7 +21,6 @@ function inputFields(){
     });
     const state = document.getElementById("state").value;
     const country = document.getElementById("country").value;
-// console.log(food_result.length);
     if(food_result.length < 2){
         document.getElementById("error").style.visibility = "visible";
     }else{
@@ -48,7 +52,7 @@ function inputFields(){
         <td> ${tableData[length -1].country}</td>
         </tr>`;
     
-        document.getElementById("myForm").reset();
+        document.getElementById("form").reset();
     }
   
 }

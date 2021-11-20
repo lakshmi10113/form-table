@@ -9,66 +9,66 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+ 
 
     <div class="pok-list">
-        <form id="myForm">
-            <div class="form-group">
-              <label for="exampleFormControlInput1">First Name</label>
-              <input type="text" class="form-control" id="first_name" >
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Last Name</label>
-                <input type="text" class="form-control" id="last_name">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Address</label>
-                <textarea class="form-control" id="address" rows="3"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Pin Code</label>
-                <input type="text" class="form-control" id="pin_code">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Gender</label>
-                <input type="text" class="form-control" id="gender" >
-              </div>
-              
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Choice of Food</label>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="pizza" >
-                <label class="form-check-label" for="exampleCheck1">Pizza</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="burger">
-                <label class="form-check-label" for="exampleCheck1">Burger</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="pasta" >
-                <label class="form-check-label" for="exampleCheck1">Pasta</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="noodles">
-                <label class="form-check-label" for="exampleCheck1">Noodles</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="rice" >
-                <label class="form-check-label" for="exampleCheck1">Rice</label>
-              </div>
-            </div>
+      <h1 id="title">FORM</h1>
+      <p id="description">This is a Food Choice Form</p>
 
-            <div class="form-group">
-                <label for="exampleFormControlInput1">State</label>
-                <input type="text" class="form-control" id="state" >
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Country</label>
-                <input type="text" class="form-control" id="country" >
-              </div>
+        <form id="form">
+      <div class="form-group">
+
+              <label for="exampleFormControlInput1">First Name</label>
+              <input type="text" placeholder="enter your first name" class="form-control" id="first-name" required>
+
+              
+              <label for="exampleFormControlInput1">Last Name</label>
+              <input type="text" placeholder="enter your last name" class="form-control" id="last-name" required>
+            
+              <label for="exampleFormControlTextarea1">Address</label>
+              <textarea class="form-control" placeholder="enter your address" id="address" rows="3"></textarea>
+            
+              <label for="exampleFormControlInput1">Pin Code</label>
+              <input type="text" class="form-control"  placeholder="enter your pincode" id="pincode" required>
+           
+              <label id="genderoption" for="exampleFormControlInput1">Gender</label>
+                <input name="sex" id="male" type="radio" value="male">Male</input>
+                <input name="sex" id="female" type="radio" value="female">Female</input>
+              
+              
+            <label id="food" for="exampleFormControlSelect1">Choice of Food</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="pizza" >
+              <label class="form-check-label" for="exampleCheck1">Pizza</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="burger">
+              <label class="form-check-label" for="exampleCheck1">Burger</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="pasta" >
+              <label class="form-check-label" for="exampleCheck1">Pasta</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="noodles">
+              <label class="form-check-label" for="exampleCheck1">Noodles</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="rice" >
+              <label class="form-check-label" for="exampleCheck1">Rice</label>
+            </div>
+              <label for="exampleFormControlInput1">State</label>
+              <input type="text" class="form-control" id="state" >
+           
+              <label for="exampleFormControlInput1">Country</label>
+              <input type="text" class="form-control" id="country" >
+        </div>
+        <button id="submit" type="button" class="btn btn-primary" onclick="inputFields()">Submit</button>
+         
           
           </form>
-          <button id="submit" type="button" class="btn btn-primary" onclick="inputFields()">Submit</button>
+
+
           <p id="error">choose 2 or more food choices</p>
           <table class="table">
             <thead>
@@ -84,14 +84,14 @@
               </tr>
             </thead>
             <tbody>
-              <!-- <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr> -->
+            
             </tbody>
           </table>
+    </div>
+
+    <div>
+      <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  
     </div>
 </body>
 </html>

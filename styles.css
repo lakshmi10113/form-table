@@ -14,4 +14,14 @@ body {
    color:red;
    padding-left: 16px;;
  }
+
+ #first-name,#last-name,#address, #pincode ,#food,#genderoption,#state,#country{
+   display: block;
+   margin: 20px 0;
+ }
+ #title,#description{
+  margin-left: 20px;
+
+ }
+ 
  
